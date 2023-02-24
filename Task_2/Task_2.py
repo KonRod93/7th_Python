@@ -13,8 +13,7 @@
 # 5 10 15 20 25 30
 # 6 12 18 24 30 36
 
-# \t\t - управляющие символы
-
+# \t - управляющие символы
 
 def print_operation_table(operation, num_rows=6, num_columns=6):
     for x in range(1, num_rows + 1):
@@ -22,7 +21,7 @@ def print_operation_table(operation, num_rows=6, num_columns=6):
         for y in range(1, num_columns + 1):
             num = operation(x, y)
             nums.append(num)
-        print("\t\t".join([str(x) for x in nums]))
+        print("\t".join([str(x) for x in nums]))
 
 
 print_operation_table(lambda x, y: x * y)
